@@ -1,0 +1,31 @@
+@startuml
+interface IProduct{
++ getProduct():Object
+}
+
+class ProductA{
+  + <<Implement>> getProduct():Object
+}
+
+class ProductB{
+  + <<Implement>> getProduct():Object
+}
+
+class ProductC{
+  + <<Implement>> getProduct():Object
+}
+
+class Factory{
+  + createProduct():IProduct
+}
+
+Factory --|> ProductA
+Factory --|> ProductB
+Factory --|> ProductC
+
+ProductA ..> IProduct
+ProductB ..> IProduct
+ProductC ..> IProduct
+
+
+@enduml
