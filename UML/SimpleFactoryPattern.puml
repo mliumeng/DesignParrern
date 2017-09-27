@@ -1,18 +1,18 @@
 @startuml
 interface IProduct{
-+ getProduct():Object
++ setColor():Object
 }
 
 class ProductA{
-  + <<Implement>> getProduct():Object
+  + <<Implement>> setColor():Object
 }
 
 class ProductB{
-  + <<Implement>> getProduct():Object
+  + <<Implement>> setColor():Object
 }
 
 class ProductC{
-  + <<Implement>> getProduct():Object
+  + <<Implement>> setColor():Object
 }
 
 class Factory{
